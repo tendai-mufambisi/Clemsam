@@ -7,6 +7,9 @@ import { Services } from "@/components/site/Services";
 import { FeaturedProjects } from "@/components/site/FeaturedProjects";
 import { Commitments } from "@/components/site/Commitments";
 import { About } from "@/components/site/About";
+import { CEO } from "@/components/site/CEO";
+import { Team } from "@/components/site/Team";
+import { CompanyProfile } from "@/components/site/CompanyProfile";
 import { ProjectReel } from "@/components/site/ProjectReel";
 import { Testimonials } from "@/components/site/Testimonials";
 import { CtaBanner } from "@/components/site/CtaBanner";
@@ -36,6 +39,9 @@ function Home() {
         <FeaturedProjects />
         <Commitments />
         <About />
+        <CEO />
+        <Team />
+        <CompanyProfile />
         <ProjectReel />
         <Testimonials />
         <CtaBanner />
