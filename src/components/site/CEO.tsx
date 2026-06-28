@@ -6,7 +6,7 @@ const stats = [
   { value: "5+", label: "Years Leading" },
   { value: "100+", label: "Projects Overseen" },
   { value: "50+", label: "Happy Clients" },
-  { value: "7", label: "Trade Specialties" },
+  { value: "11", label: "Trade Specialties" },
 ];
 
 const credentials = [
