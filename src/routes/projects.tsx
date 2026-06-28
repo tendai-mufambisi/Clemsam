@@ -27,10 +27,23 @@ const tilingGlob = import.meta.glob("../assets/tiling/*.jpeg", {
 export const Route = createFileRoute("/projects")({
   head: () => ({
     meta: [
-      { title: "Our Projects | Clemsam Construction Solutions" },
-      { name: "description", content: "A portfolio of construction, interior finishing, ceilings, kitchens, tiling, and paving projects delivered by Clemsam across Zimbabwe." },
-      { property: "og:title", content: "Our Projects — Clemsam Construction" },
-      { property: "og:description", content: "Spaces we've designed, built, and finished across Zimbabwe." },
+      { title: "Our Projects | Clemsam Construction Solutions — Harare, Zimbabwe" },
+      {
+        name: "description",
+        content:
+          "Browse Clemsam Construction Solutions' project portfolio — kitchen installations, tiling & cladding, building & construction work delivered across Harare and Zimbabwe.",
+      },
+      { property: "og:title", content: "Our Projects | Clemsam Construction Solutions — Harare, Zimbabwe" },
+      {
+        property: "og:description",
+        content:
+          "Kitchen installations, tiling & cladding, and building & construction work delivered by Clemsam across Zimbabwe.",
+      },
+      { property: "og:url", content: "https://clemsamconstruction.co.zw/projects" },
+      { property: "og:image", content: "https://clemsamconstruction.co.zw/og.jpg" },
+    ],
+    links: [
+      { rel: "canonical", href: "https://clemsamconstruction.co.zw/projects" },
     ],
   }),
   component: ProjectsPage,
