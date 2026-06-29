@@ -69,22 +69,96 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
   );
 }
 
+const SITE_URL = "https://clemsamconstruction.co.zw";
+const OG_IMAGE = `${SITE_URL}/og.jpg`;
+
+const businessSchema = {
+  "@context": "https://schema.org",
+  "@type": "GeneralContractor",
+  name: "Clemsam Construction Solutions",
+  alternateName: "Clemsam Construction",
+  url: SITE_URL,
+  image: OG_IMAGE,
+  logo: OG_IMAGE,
+  description:
+    "Harare-based construction and interior finishing company specialising in suspended ceilings, kitchen cabinets, tiling, painting, roofing, plumbing, and full building construction across Zimbabwe.",
+  telephone: "+263783456446",
+  email: "info@clemsam.co.zw",
+  foundingDate: "2020",
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Harare",
+    addressRegion: "Harare Province",
+    addressCountry: "ZW",
+  },
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: "-17.8252",
+    longitude: "31.0335",
+  },
+  areaServed: { "@type": "Country", name: "Zimbabwe" },
+  priceRange: "$$",
+  knowsAbout: [
+    "Suspended Ceilings",
+    "Kitchen Cabinets",
+    "BICs and TV Cabinets",
+    "Tiling and Cladding",
+    "Painting Services",
+    "Roofing",
+    "Plumbing Services",
+    "Building and Construction",
+    "Project Management",
+    "Property Management",
+    "Landscaping and Paving",
+  ],
+};
+
 export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()({
   head: () => ({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Clemsam Construction Solutions | Premium Construction & Interior Finishing in Zimbabwe" },
-      { name: "description", content: "Premium ceilings, fitted kitchens, tiling, painting, and full construction services across Zimbabwe. Built with integrity. Delivered on time." },
+      { name: "robots", content: "index, follow" },
+      { name: "theme-color", content: "#0a2540" },
+      { title: "Clemsam Construction Solutions — Harare, Zimbabwe" },
+      {
+        name: "description",
+        content:
+          "Harare's trusted construction & interior finishing team. Suspended ceilings, kitchen cabinets, tiling, painting, roofing, plumbing & full builds across Zimbabwe. Get a free quote today.",
+      },
       { name: "author", content: "Clemsam Construction Solutions Pvt Ltd" },
+      { name: "geo.region", content: "ZW-HA" },
+      { name: "geo.placename", content: "Harare, Zimbabwe" },
+      { name: "geo.position", content: "-17.8252;31.0335" },
+      { name: "ICBM", content: "-17.8252, 31.0335" },
+      // Open Graph
       { property: "og:type", content: "website" },
+      { property: "og:site_name", content: "Clemsam Construction Solutions" },
+      { property: "og:url", content: SITE_URL },
+      { property: "og:title", content: "Clemsam Construction Solutions — Harare, Zimbabwe" },
+      {
+        property: "og:description",
+        content:
+          "Premium construction & interior finishing across Zimbabwe. Ceilings, kitchens, tiling, painting, roofing, plumbing & full building projects.",
+      },
+      { property: "og:image", content: OG_IMAGE },
+      { property: "og:image:width", content: "1200" },
+      { property: "og:image:height", content: "630" },
+      { property: "og:image:alt", content: "Clemsam Construction Solutions — Premium Building in Zimbabwe" },
+      { property: "og:locale", content: "en_ZW" },
+      // Twitter / X
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Clemsam Construction Solutions — Harare, Zimbabwe" },
+      {
+        name: "twitter:description",
+        content:
+          "Premium construction & interior finishing across Zimbabwe. Ceilings, kitchens, tiling, painting, roofing & more.",
+      },
+      { name: "twitter:image", content: OG_IMAGE },
     ],
     links: [
-      {
-        rel: "stylesheet",
-        href: appCss,
-      },
+      { rel: "stylesheet", href: appCss },
+      { rel: "canonical", href: SITE_URL },
     ],
   }),
   shellComponent: RootShell,
@@ -95,9 +169,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
 
 function RootShell({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en-ZW">
       <head>
         <HeadContent />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(businessSchema) }}
+        />
       </head>
       <body>
         {children}

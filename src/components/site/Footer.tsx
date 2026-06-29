@@ -32,13 +32,17 @@ export function Footer() {
         <div>
           <h4 className="font-display font-semibold mb-4 text-secondary">Services</h4>
           <ul className="space-y-2.5 text-sm text-primary-foreground/75">
-            <li>Suspended Ceilings</li>
-            <li>Fitted Kitchens & BICs</li>
+            <li>Suspended & Drop Ceilings</li>
+            <li>Kitchen Cabinets</li>
+            <li>BICs & TV Cabinets</li>
             <li>Tiling & Cladding</li>
-            <li>Painting & Finishes</li>
-            <li>Building Construction</li>
-            <li>Civil Engineering</li>
-            <li>Paving</li>
+            <li>Painting Services</li>
+            <li>Roofing</li>
+            <li>Plumbing Services</li>
+            <li>Building & Construction</li>
+            <li>Project Management</li>
+            <li>Property Management</li>
+            <li>Landscaping & Paving</li>
           </ul>
         </div>
 
@@ -72,15 +76,15 @@ export function Footer() {
       </div>
 
       <div className="border-t border-white/10">
-        <div className="mx-auto max-w-7xl px-5 lg:px-8 py-5 flex flex-col sm:flex-row gap-2 justify-between items-center text-xs text-primary-foreground/60">
-          <p>© 2026 Clemsam Construction Solutions Pvt Ltd. All rights reserved.</p>
-          <p>
-            Designed by{" "}
+        <div className="mx-auto max-w-7xl px-5 lg:px-8 py-6 flex flex-col items-center gap-3 text-center">
+          <p className="text-xs text-primary-foreground/60">© 2026 Clemsam Construction Solutions Pvt Ltd. All rights reserved.</p>
+          <p className="text-base font-semibold text-[orangered]">
+            Designed By{" "}
             <a
               href="https://digitsdigital.co.zw"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-secondary transition-colors underline underline-offset-2"
+              className="hover:opacity-80 transition-opacity underline underline-offset-2"
             >
               Digits Digital
             </a>

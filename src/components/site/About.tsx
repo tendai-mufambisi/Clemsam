@@ -1,5 +1,4 @@
 import { Reveal } from "./Reveal";
-// TODO: Swap with actual Clemsam team photo
 import teamImg from "@/assets/team.jpg";
 
 const stats = [

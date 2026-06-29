@@ -1,17 +1,22 @@
 import {
-  Layers, ChefHat, Grid3x3, Paintbrush, Building2, HardHat, Construction, ArrowUpRight,
+  Layers, ChefHat, LayoutGrid, Grid3x3, Paintbrush, Home, Droplets,
+  Building2, ClipboardList, KeyRound, Leaf, ArrowUpRight,
 } from "lucide-react";
 import { SectionHeading } from "./SectionHeading";
 import { Reveal } from "./Reveal";
 
 const services = [
-  { icon: Layers, name: "Suspended Ceilings", desc: "Modern drop ceilings, LED mood lighting, and statement designs that transform any room." },
-  { icon: ChefHat, name: "Fitted Kitchens & BICs", desc: "Custom-built cabinetry, wardrobes, and kitchens crafted to your space and style." },
+  { icon: Layers, name: "Suspended & Drop Ceilings", desc: "Modern drop ceilings, LED cove lighting, and statement designs that transform any room." },
+  { icon: ChefHat, name: "Kitchen Cabinets", desc: "Custom-built kitchen cabinetry crafted to your space, style, and budget." },
+  { icon: LayoutGrid, name: "BICs & TV Cabinets", desc: "Built-in cupboards and bespoke TV units designed and installed to the highest finish." },
   { icon: Grid3x3, name: "Tiling & Cladding", desc: "Precision tiling and wall cladding for kitchens, bathrooms, and feature walls." },
-  { icon: Paintbrush, name: "Painting & Finishes", desc: "Interior and exterior painting with premium-grade finishes that last." },
-  { icon: Building2, name: "Building Construction", desc: "Residential and commercial builds delivered on time and on budget." },
-  { icon: HardHat, name: "Civil Engineering", desc: "Structural and civil works backed by qualified engineering expertise." },
-  { icon: Construction, name: "Paving", desc: "Driveways, walkways, and outdoor surfaces built to withstand Zimbabwean conditions." },
+  { icon: Paintbrush, name: "Painting Services", desc: "Interior and exterior painting with premium-grade finishes that stand the test of time." },
+  { icon: Home, name: "Roofing", desc: "Roof installations, repairs, and re-sheeting using quality materials suited to Zimbabwean conditions." },
+  { icon: Droplets, name: "Plumbing Services", desc: "Complete plumbing installations, repairs, and maintenance for residential and commercial properties." },
+  { icon: Building2, name: "Building & Construction", desc: "Residential and commercial builds managed from foundation to handover, on time and on budget." },
+  { icon: ClipboardList, name: "Project Management", desc: "End-to-end project coordination — schedules, contractors, quality control, and client reporting." },
+  { icon: KeyRound, name: "Property Management", desc: "Ongoing maintenance and management solutions that keep your property in top condition." },
+  { icon: Leaf, name: "Landscaping & Paving", desc: "Driveways, walkways, gardens, and outdoor surfaces built to enhance your property's kerb appeal." },
 ];
 
 export function Services() {

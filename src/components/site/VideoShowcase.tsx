@@ -52,7 +52,7 @@ export function VideoShowcase() {
         <SectionHeading
           eyebrow="Our Work"
           title="See Our Craftsmanship In Motion"
-          sub="A recent finished office fit-out — custom cupboards, fittings, and finishes by our team."
+          sub="A recent kitchen installation — custom cabinetry, fittings, and finishes by our team."
         />
         <Reveal>
           <div className="relative rounded-3xl overflow-hidden shadow-[var(--shadow-elegant)] aspect-video bg-primary group cursor-pointer">
