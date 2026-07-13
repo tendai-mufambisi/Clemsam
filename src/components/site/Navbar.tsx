@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link, useLocation } from "@tanstack/react-router";
-import { Menu, X, HardHat } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { openWhatsapp } from "@/lib/whatsapp";
 import { cn } from "@/lib/utils";
@@ -38,9 +38,11 @@ export function Navbar() {
     >
       <div className="mx-auto max-w-7xl px-5 lg:px-8 h-20 flex items-center justify-between">
         <Link to="/" className="flex items-center gap-2.5 group" onClick={() => setOpen(false)}>
-          <span className="grid place-items-center size-10 rounded-xl bg-secondary text-secondary-foreground transition-transform group-hover:scale-105">
-            <HardHat className="size-5" />
-          </span>
+          <img
+            src="/images/logo-mark.png"
+            alt="Clemsam Construction Solutions"
+            className="h-20 w-auto transition-transform group-hover:scale-105"
+          />
           <span className="text-primary-foreground font-display font-bold text-lg leading-tight">
             Clemsam
             <span className="block text-[10px] uppercase tracking-[0.2em] text-secondary font-medium">Construction</span>

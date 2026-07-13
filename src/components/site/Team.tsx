@@ -138,8 +138,8 @@ export function Team() {
           eyebrow="Our Team"
           title={
             <>
-              The people who make it{" "}
-              <span className="text-secondary">happen.</span>
+              {/* The people who make it{" "}
+              <span className="text-secondary">happen.</span> */}
             </>
           }
           sub="Skilled, passionate, and united by one goal — delivering work that stands out and stands the test of time."

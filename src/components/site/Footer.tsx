@@ -1,4 +1,4 @@
-import { HardHat, Facebook, Instagram, Twitter, MessageCircle, Mail, Phone, MapPin } from "lucide-react";
+import { Facebook, Instagram, Twitter, MessageCircle, Mail, Phone, MapPin } from "lucide-react";
 import { Link } from "@tanstack/react-router";
 import { EMAIL_INFO, PHONE_DISPLAY, whatsappLink } from "@/lib/whatsapp";
 
@@ -8,13 +8,14 @@ export function Footer() {
       <div className="mx-auto max-w-7xl px-5 lg:px-8 py-16 grid gap-12 md:grid-cols-2 lg:grid-cols-4">
         <div>
           <div className="flex items-center gap-2.5 mb-4">
-            <span className="grid place-items-center size-10 rounded-xl bg-secondary text-secondary-foreground">
-              <HardHat className="size-5" />
-            </span>
+            <img src="/images/logo-mark.png" alt="Clemsam Construction Solutions" className="h-20 w-auto" />
             <span className="font-display font-bold text-lg">Clemsam Construction</span>
           </div>
           <p className="text-sm text-primary-foreground/70 leading-relaxed">
             Turning blueprints into reality. Premium construction and interior finishing across Zimbabwe.
+          </p>
+          <p className="mt-3 text-sm text-primary-foreground/70">
+            Website: <a href="https://clemsamconstruction.co.zw" target="_blank" rel="noopener noreferrer" className="text-secondary hover:underline">https://clemsamconstruction.co.zw</a>
           </p>
         </div>
 

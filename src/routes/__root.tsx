@@ -71,6 +71,7 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
 
 const SITE_URL = "https://clemsamconstruction.co.zw";
 const OG_IMAGE = `${SITE_URL}/og.jpg`;
+const LOGO_IMAGE = `${SITE_URL}/images/logo.png`;
 
 const businessSchema = {
   "@context": "https://schema.org",
@@ -79,7 +80,7 @@ const businessSchema = {
   alternateName: "Clemsam Construction",
   url: SITE_URL,
   image: OG_IMAGE,
-  logo: OG_IMAGE,
+  logo: LOGO_IMAGE,
   description:
     "Harare-based construction and interior finishing company specialising in suspended ceilings, kitchen cabinets, tiling, painting, roofing, plumbing, and full building construction across Zimbabwe.",
   telephone: "+263783456446",
@@ -159,6 +160,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     links: [
       { rel: "stylesheet", href: appCss },
       { rel: "canonical", href: SITE_URL },
+      { rel: "icon", href: "/favicon.ico", sizes: "any" },
+      { rel: "icon", type: "image/png", sizes: "16x16", href: "/favicon-16.png" },
+      { rel: "icon", type: "image/png", sizes: "32x32", href: "/favicon-32.png" },
+      { rel: "icon", type: "image/png", sizes: "192x192", href: "/icon-192.png" },
+      { rel: "apple-touch-icon", href: "/apple-touch-icon.png" },
     ],
   }),
   shellComponent: RootShell,
