@@ -29,16 +29,12 @@ export function CEO() {
 
               {/* Portrait frame */}
               <div className="relative aspect-[3/4] lg:aspect-auto lg:h-[480px] overflow-hidden rounded-3xl shadow-[var(--shadow-elegant)]">
-                <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary/90 to-secondary/40" />
-                {/* Replace this div with an <img> tag when CEO photo is available */}
-                <div className="absolute inset-0 flex flex-col items-center justify-center gap-4">
-                  <div className="grid size-36 place-items-center rounded-full border-2 border-white/20 bg-white/10 backdrop-blur-sm">
-                    <span className="font-display text-6xl font-bold text-white/90">S</span>
-                  </div>
-                  <span className="text-xs uppercase tracking-[0.22em] text-white/30">
-                    Photo coming soon
-                  </span>
-                </div>
+                <img
+                  src="/images/Mr Samu.png"
+                  alt="Mr. Samu"
+                  className="absolute inset-0 h-full w-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-primary/10 to-transparent" />
                 {/* Name overlay at bottom */}
                 <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-primary/90 via-primary/50 to-transparent p-7">
                   <div className="font-display text-2xl font-bold text-white">Mr. Samu</div>
